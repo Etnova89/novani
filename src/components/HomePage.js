@@ -1,14 +1,11 @@
 // HomePage.js
 import React from "react";
-import {
-  Typography,
-  Button,
-  Container,
-  Box,
-  Grid2,
-} from "@mui/material";
+import { Typography, Button, Container, Box, Grid2, Icon } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { useAppTheme } from "../theme/hooks";
+import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
+import PeopleAltOutlinedIcon from "@mui/icons-material/PeopleAltOutlined";
+import FamilyRestroomIcon from "@mui/icons-material/FamilyRestroom";
 
 const HomePage = () => {
   const { theme, isMobile } = useAppTheme();
@@ -17,6 +14,23 @@ const HomePage = () => {
   const handleConsultationClick = () => {
     navigate("/contact");
   };
+  const services = [
+    {
+      title: "Individual Therapy",
+      icon: PersonOutlineIcon,
+      text: "Every individual has a dance when in conflict. One person criticizes and the other person counter-attacks. This dance likely continues until one withdraws or shuts down. Some of the foundational work in couples therapy is recognizing the dance, pausing, listening for the music (emotions and needs) and then co-constructing new moves that allow partners to sync up and move in harmony with one another."
+    },
+    {
+      title: "Couples Therapy",
+      icon: PeopleAltOutlinedIcon,
+      text: "Every couple has a dance when in conflict. One person criticizes and the other person counter-attacks. This dance likely continues until one withdraws or shuts down. Some of the foundational work in couples therapy is recognizing the dance, pausing, listening for the music (emotions and needs) and then co-constructing new moves that allow partners to sync up and move in harmony with one another."
+    },
+    {
+      title: "Family Therapy",
+      icon: FamilyRestroomIcon,
+      text: "Every Family has a dance when in conflict. One person criticizes and the other person counter-attacks. This dance likely continues until one withdraws or shuts down. Some of the foundational work in couples therapy is recognizing the dance, pausing, listening for the music (emotions and needs) and then co-constructing new moves that allow partners to sync up and move in harmony with one another."
+    },
+  ];
 
   return (
     <Box
@@ -85,40 +99,32 @@ const HomePage = () => {
             Our Services
           </Typography>
           <Grid2 container spacing={4}>
-            {["Individual Therapy", "Couples Therapy", "Family Therapy"].map(
-              (service) => (
-                <Grid2 item xs={12} md={4} key={service}>
-                  <Box
-                    sx={{
-                      textAlign: "center",
-                      p: 3,
-                      bgcolor: "background.paper",
-                      borderRadius: 1,
-                      boxShadow: 1,
-                    }}
+            {services.map((service) => (
+              <Grid2 item xs={12} md={4} key={service.title}>
+                <Box
+                  sx={{
+                    textAlign: "center",
+                    p: 3,
+                    bgcolor: "background.paper",
+                    borderRadius: 1,
+                    boxShadow: 1,
+                  }}
+                >
+                  <Icon component={service.icon} />
+                  <Typography
+                    variant="h5"
+                    component="h3"
+                    gutterBottom
+                    color="text.primary"
                   >
-                    <Typography
-                      variant="h5"
-                      component="h3"
-                      gutterBottom
-                      color="text.primary"
-                    >
-                      {service}
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      Every couple has a dance when in conflict. One person
-                      criticizes and the other person counter-attacks. This
-                      dance likely continues until one withdraws or shuts down.
-                      Some of the foundational work in couples therapy is
-                      recognizing the dance, pausing, listening for the music
-                      (emotions and needs) and then co-constructing new moves
-                      that allow partners to sync up and move in harmony with
-                      one another.
-                    </Typography>
-                  </Box>
-                </Grid2>
-              )
-            )}
+                    {service.title}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {service.text}
+                  </Typography>
+                </Box>
+              </Grid2>
+            ))}
           </Grid2>
         </Box>
 

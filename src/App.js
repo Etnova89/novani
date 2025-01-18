@@ -61,7 +61,7 @@ const AppContent = () => {
               sx={{
                 flexGrow: 1,
                 fontWeight: "bold",
-                color: theme.palette.primary.main,
+                color: theme.palette.primary.light,
                 textDecoration: "none",
                 "&:hover": {
                   textDecoration: "none",
@@ -103,7 +103,8 @@ const AppContent = () => {
           }}
         >
           <Typography variant="body2" align="center">
-            © {new Date().getFullYear()} Novani Therapy. All rights reserved.
+            © {new Date().getFullYear()} Novani Therapy & Wellness PLLC. 
+              <br />All rights reserved
           </Typography>
         </Box>
       </Box>
