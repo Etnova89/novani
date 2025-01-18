@@ -19,9 +19,10 @@ import {
 } from "@mui/icons-material";
 import { useTheme } from "@mui/material/styles";
 import { useNavigate } from "react-router-dom";
+import { useAppTheme } from '../theme/hooks';
 
 const AboutPage = () => {
-  const theme = useTheme();
+  const { theme, isMobile } = useAppTheme();
   const navigate = useNavigate();
   const handleConsultationClick = () => {
     navigate("/contact");
