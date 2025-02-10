@@ -17,7 +17,6 @@ import {
   Science,
   HealthAndSafety,
 } from "@mui/icons-material";
-import { useTheme } from "@mui/material/styles";
 import { useNavigate } from "react-router-dom";
 import { useAppTheme } from '../theme/hooks';
 
@@ -49,9 +48,19 @@ const AboutPage = () => {
             />
           </Grid>
           <Grid item xs={12} md={8}>
+<<<<<<< HEAD
             <Typography variant="body1" paragraph>
               Dr. Heena Manglani-Terranova is a Harvard-trained licensed clinical psychologist with a passion for helping patients live a life based on their own personally-chosen values. She believes that life will always be full of stressors that will create distress (i.e., anxiety, depression, worry). That is not the problem. The issue is what we, as humans tend to do when experiencing distress that matters. She uses a behavioral approach to help patients live a life that aligns with what matters most to them. Dr. Manglani-Terranova also specializes in working with South Asian Americans and bicultural couples given her understanding of the unique challenges faced by the South
               Asian community. Dr. Manglani-Terranova uses a culturally sensitive and curious approach to understand the barriers to living a meaningful life, and provides culturally-attuned care that leverages narratives of strength and resilience in her patients and provides directions forv values-based living.
+=======
+            <Typography variant="body1">
+              Dr. Heena Manglani-Terranova is a licensed clinical psychologist specializing
+              in South Asian and Desi therapy. With a deep understanding of
+              cultural nuances and the unique challenges faced by the South
+              Asian community, Dr. Manglani-Terranova provides culturally
+              competent care that resonates with her clients' experiences and
+              backgrounds.
+>>>>>>> main
             </Typography>
             <Typography variant="body1">
               In addition to her clinical work, Dr. Manglani-Terranova is a
