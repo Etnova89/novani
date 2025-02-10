@@ -17,7 +17,6 @@ import {
   Science,
   HealthAndSafety,
 } from "@mui/icons-material";
-import { useTheme } from "@mui/material/styles";
 import { useNavigate } from "react-router-dom";
 import { useAppTheme } from '../theme/hooks';
 
@@ -49,8 +48,8 @@ const AboutPage = () => {
             />
           </Grid>
           <Grid item xs={12} md={8}>
-            <Typography variant="body1" paragraph>
-              Dr. Heena Manglani-Terranova is a licensed therapist specializing
+            <Typography variant="body1">
+              Dr. Heena Manglani-Terranova is a licensed clinical psychologist specializing
               in South Asian and Desi therapy. With a deep understanding of
               cultural nuances and the unique challenges faced by the South
               Asian community, Dr. Manglani-Terranova provides culturally
