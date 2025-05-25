@@ -8,31 +8,31 @@ const ServicesPage = () => {
     {
       title: "Individual Therapy",
       description:
-        "One-on-one sessions tailored to your unique goals. I use a skills-based approach to help build awareness of challenging experiences and help patients use evidence-based tools to pursue what matters to them.",
+        "Each person carries a set of <b>personal stories about who they are.</b> Usually these stories are shaped by powerful moments and past experiences. Over time, these stories can begin to define what we believe we're capable of, often leading to patterns that feel limiting or stuck. In individual therapy, I <b>work collaboratively with clients to identify these recurring “frequent flyer” stories,<b> understand how they react to them, and <b>develop skills to respond in ways that reflect their values</b> and what kind of person they strive to be. Together, we create space for <b>greater flexibility, self-awareness, and a more empowered way of living.</b>",
       details: [
-        "Cognitive Behavioral Therapy (CBT)",
-        "Mindfulness-Based Treatments",
+        "Acceptance and Commitment Therapy (ACT)",
+        "Narrative Therapy",
         "Solution-Focused Therapy",
       ],
     },
     {
       title: "Couple Therapy",
       description:
-        "Strengthen your understanding, communication, and problem-solving through structured sessions focused on resolving disagreements and enhancing closeness. The work centers on fostering partnerships that are rooted in gratitude, compassion, and curiosity.",
+        "Every couple has a familiar “dance” during conflict—often a cycle where one partner criticizes, the other defends or counter-attacks, and eventually someone withdraws or shuts down. In couple therapy, one of the first steps is recognizing this dance, learning to pause, and listening for the music underneath—the emotions, needs, and longings that drive it./Together, we work to co-create new patterns of interaction that help you move more intentionally and in sync with one another./ Relational challenges often emerge during life transitions--making a long-term commitment to a partner, parenthood, midlife demands of parenting, caregiving, becoming grandparents, retirement, and aging. Sessions focus on deepening understanding, improving communication, and strengthening your ability to navigate conflict. At the core of the work is a commitment to building a partnership rooted in gratitude, compassion, and curiosity.",
       details: [
+        "Emotion Focused Therapy (EFT)",
         "Gottman Method",
-        "Emotion Focused Couple Therapy (EFCT)",
-        "Narrative Therapy",
+        "Structural Therapy",
       ],
     },
     {
       title: "Family Therapy",
       description:
-        "Navigate familial differences by recognizing intergenerational patterns, clarifying individual needs, and strengthening relational bonds.",
+        "Navigate familial differences by recognizing intergenerational patterns, clarifying individual needs, and strengthening relational bonds.Families are evolving systems, like seasons with naturally occurring changes. When normative changes are halted or obstructed, one or more people in the family may feel oppressed. In family therapy, I help members to learn ways of relating differently to one another. Changes in the family system can have powerful ripple effects such that identifying individual vulnerabilities and provisioning unmet needs can alter the entire system. I work with families to identify ways to free individuals from oppression and to help families strengthen connections and growth in ways that support health and well-being of individuals with the family and larger systems in which they reside.",
       details: [
         "Structural Family Therapy",
         "Intergenerational Bowen Therapy",
-        "Solution-Focused Brief Therapy (SFBT)",
+        "Systemic Therapy",
       ],
     },
     {
