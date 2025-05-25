@@ -8,27 +8,27 @@ const ServicesPage = () => {
     {
       title: "Individual Therapy",
       description:
-        "One-on-one sessions tailored to your unique goals for better well-being. We use a values-based model to help build awareness of challenging experiences and help patients use evidence-based tools to pursue what matters to them.",
+        "One-on-one sessions tailored to your unique goals. I use a skills-based approach to help build awareness of challenging experiences and help patients use evidence-based tools to pursue what matters to them.",
       details: [
         "Cognitive Behavioral Therapy (CBT)",
-        "Mindfulness-Based Approaches",
-        "Trauma-Informed Care",
+        "Mindfulness-Based Treatments",
+        "Solution-Focused Therapy",
       ],
     },
     {
-      title: "Couple's Therapy",
+      title: "Couple Therapy",
       description:
-        "Strengthen your understanding, communication, and problem-solving through structured sessions focused on resolving your disagreements with compassion and collaboration. The work centers on fostering partners who are caring, curious, and compassionate.",
+        "Strengthen your understanding, communication, and problem-solving through structured sessions focused on resolving disagreements and enhancing closeness. The work centers on fostering partnerships that are rooted in gratitude, compassion, and curiosity.",
       details: [
         "Gottman Method",
-        "Emotiona Focused Couple Therapy (EFCT)",
+        "Emotion Focused Couple Therapy (EFCT)",
         "Narrative Therapy",
       ],
     },
     {
       title: "Family Therapy",
       description:
-        "Navigate familial differences by clarifing boundaries, stregnthening bonds, and recognizing intergenerational patterns.Identify family values and make changes in service of personally chosen values within the family system.",
+        "Navigate familial differences by recognizing intergenerational patterns, clarifying individual needs, and strengthening relational bonds.",
       details: [
         "Structural Family Therapy",
         "Intergenerational Bowen Therapy",
@@ -36,13 +36,13 @@ const ServicesPage = () => {
       ],
     },
     {
-      title: "Group Therapy",
+      title: "Consultation and Program Development",
       description:
-        "Join a supportive community of individuals facing similar challenges. Our group sessions offer shared learning and growth.",
+        "Dr. Manglani-Terranova provides clinical consultation services to mental health providers who are working with the Asian American Community. She also offers services for program development for various healthcare, business, and organizational needs.",
       details: [
-        "South Asian Resilience Groups",
-        "Adjusting to Chronic Illness Groups",
-        "Cognitive Rehabilitation Groups",
+        "Clinical Consultation",
+        "Program Development",
+        "Interactive Workshops",
       ],
     },
   ];

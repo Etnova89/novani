@@ -21,19 +21,19 @@ const HomePage = () => {
     {
       title: "Individual Therapy",
       icon: PersonOutlineIcon,
-      text: "Each person carries to therapy a set of stories about who they are (or aren’t), why they are stuck, and where they want to head. Often, there is a large focus on all the problems. My approach to therapy is to help discover your strengths, help you unhook from self-sabotaging stories, and to discover what gives you meaning and purpose—and to then support your steps toward living the life you imagined.",
+      text: "Every individual has a set of stories about who they are. Usually these stories are the most evocative moments of their lives strung together. These narratives can start to dictate what one can and cannot do leading to a limited way of living. In my individual work with patients, I help patients to identify their frequent flyer stories, the behaviors those stories provoke, and skills to use to unhook from these stories and live a life that aligns with their ideal version of themselves.",
       image: individualTherapyImage,
     },
     {
       title: "Couples Therapy",
       icon: PeopleAltOutlinedIcon,
-      text: "Every couple has a dance when in conflict. One person criticizes and the other person counter-attacks. This dance likely continues until one withdraws or shuts down. Some of the foundational work in couples therapy is recognizing the dance, pausing, listening for the music (emotions and needs) and then co-constructing new moves that allow partners to sync up and move in harmony with one another.",
+      text: "Every couple has a dance when in conflict. One person criticizes and the other person counter-attacks. This dance likely continues until one withdraws or shuts down. Some of the foundational work in couples therapy is recognizing this dance, pausing, listening for the music (emotions and needs) and then co-constructing new moves that allow partners to sync up and move in harmony with one another. We use an integrative approach that combines research evidence and tools from various modalities to create a tailored treatment program for your unique relationship.",
       image: CouplesTherapyImage,
     },
     {
       title: "Family Therapy",
       icon: FamilyRestroomIcon,
-      text: "Families who come to therapy often believe that the problem lies in one person. If she was different, our whole family could be better. That might be true. However, people are part of interconnected systems. Family members act in response to one another and to the broader contexts in which they live. My goal through family therapy is to help individuals make changes that create ripple effects changing the dynamic, understanding, and compassion within relationships. I strive to help families go from seeing a person as the problem to seeing the problem as the problem. With that distance, a team-based mindset can allow changes for the betterment of all members.",
+      text: "Families are evolving systems, like seasons with naturally occurring changes. When normative changes are halted or obstructed, one or more people in the family may feel oppressed. In family therapy, I help members to learn ways of relating differently to one another. Changes in the family system can have powerful ripple effects such that identifying individual vulnerabilities and provisioning unmet needs can alter the entire system. I work with families to identify ways to free individuals from oppression and to help families strengthen connections and growth in ways that support health and well-being of individuals with the family and larger systems in which they reside.",
       image: familyTherapyImage,
     },
   ];
@@ -94,7 +94,7 @@ const HomePage = () => {
               textAlign: "center",
             }}
           >
-            At Novani Therapy, we believe in providing compassionate,
+            At Novani Therapy & Wellness, we believe in providing compassionate,
             evidence-based care to help you navigate life's challenges.
           </Typography>
         </Box>
@@ -200,7 +200,7 @@ const HomePage = () => {
           </Typography>
           <Typography variant="body1" paragraph color="text.secondary">
             Contact Dr. Manglani-Terranova to learn whether her practice is an
-            optimal fit for your mental health and wellness needs.
+            ideal fit for your mental health and wellness needs.
           </Typography>
           <Button
             variant="contained"
