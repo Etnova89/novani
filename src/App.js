@@ -15,6 +15,8 @@ import AboutPage from "./components/AboutPage";
 import ContactPage from "./components/ContactPage";
 import HomePage from "./components/HomePage";
 import ServicesPage from "./components/ServicesPage";
+import FeesPage from "./components/FeesPage";
+import FAQPage from "./components/FAQPage";
 import { ThemeProvider, useColorMode } from "./theme/themeProvider";
 
 const ThemeToggle = () => {
@@ -82,6 +84,12 @@ const AppContent = () => {
             <Button color="inherit" component={Link} to="/contact">
               Contact
             </Button>
+            <Button color="inherit" component={Link} to="/fees">
+              Fees
+            </Button>
+            <Button color="inherit" component={Link} to="/faq">
+              FAQ
+            </Button>
             <ThemeToggle />
           </Toolbar>
         </AppBar>
@@ -91,6 +99,8 @@ const AppContent = () => {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/" element={<HomePage />} />
           <Route path="/services" element={<ServicesPage />} />
+          <Route path="/fees" element={<FeesPage />} />
+          <Route path="/faq" element={<FAQPage />} />
         </Routes>
 
         <Box
@@ -103,8 +113,9 @@ const AppContent = () => {
           }}
         >
           <Typography variant="body2" align="center">
-            © {new Date().getFullYear()} Novani Therapy & Wellness PLLC. 
-              <br />All rights reserved
+            © {new Date().getFullYear()} Novani Therapy & Wellness PLLC.
+            <br />
+            All rights reserved
           </Typography>
         </Box>
       </Box>
