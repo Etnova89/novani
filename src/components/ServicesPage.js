@@ -18,7 +18,7 @@ const ServicesPage = () => {
     {
       title: "Couple Therapy",
       description:
-        "Every couple has a familiar “dance” during conflict—often a cycle where one partner criticizes, the other defends or counter-attacks, and eventually someone withdraws or shuts down. In couple therapy, one of the first steps is recognizing this dance, learning to pause, and listening for the music underneath—the emotions, needs, and longings that drive it./Together, we work to co-create new patterns of interaction that help you move more intentionally and in sync with one another./ Relational challenges often emerge during life transitions--making a long-term commitment to a partner, parenthood, midlife demands of parenting, caregiving, becoming grandparents, retirement, and aging. Sessions focus on deepening understanding, improving communication, and strengthening your ability to navigate conflict. At the core of the work is a commitment to building a partnership rooted in gratitude, compassion, and curiosity.",
+        "Every couple has a familiar “dance” during conflict—often a cycle where one partner criticizes, the other defends or counter-attacks, and eventually someone withdraws or shuts down. In couple therapy, one of the first steps is recognizing this dance, learning to pause, and listening for the music underneath—the emotions, needs, and longings that drive it./Together, we work to co-create new patterns of interaction that help you move more intentionally and in sync with one another./These new patterns are particularly important as couples go through life transitions--making a long-term commitment to each other, parenthood, midlife demands of parenting and caregiving, becoming grandparents, retirement, and aging. Sessions focus on deepening understanding, improving communication, and strengthening your ability to navigate conflict together. At the core of the work is a commitment to building a partnership rooted in gratitude, compassion, and connection.",
       details: [
         "Emotion Focused Therapy (EFT)",
         "Gottman Method",
@@ -28,17 +28,17 @@ const ServicesPage = () => {
     {
       title: "Family Therapy",
       description:
-        "Navigate familial differences by recognizing intergenerational patterns, clarifying individual needs, and strengthening relational bonds.Families are evolving systems, like seasons with naturally occurring changes. When normative changes are halted or obstructed, one or more people in the family may feel oppressed. In family therapy, I help members to learn ways of relating differently to one another. Changes in the family system can have powerful ripple effects such that identifying individual vulnerabilities and provisioning unmet needs can alter the entire system. I work with families to identify ways to free individuals from oppression and to help families strengthen connections and growth in ways that support health and well-being of individuals with the family and larger systems in which they reside.",
+        "Family conflict is rarely just about individual disagreements—it is rooted in the broader systems and intergenerational patterns that shape each family member's experience. Families are dynamic and ever-evolving, much like the seasons. Family tension often arises during natural transitions—such as adolescents becoming adults, adult children stepping into parenting roles, or major life changes like chronic illness or loss affecting the family system. These periods call for shifts in roles and expectations, which can sometimes be met with resistance or difficulty. When families struggle to adapt, one or more members may feel unseen, misunderstood, or even oppressed./In family therapy, I help families navigate these challenges by identifying patterns across generations, clarifying individual needs, and fostering more effective and compassionate ways of relating. Together, we explore how shifts in one part of the system can create ripple effects throughout the family./This work is about more than resolving conflict, it's about helping each member feel more connected, understood, and empowered. My approach supports the well-being of both individuals and the family unit as a whole, while acknowledging the larger social, cultural, and relational systems in which they live.",
       details: [
-        "Structural Family Therapy",
         "Intergenerational Bowen Therapy",
+        "Structural Family Therapy",
         "Systemic Therapy",
       ],
     },
     {
-      title: "Consultation and Program Development",
+      title: "",
       description:
-        "Dr. Manglani-Terranova provides clinical consultation services to mental health providers who are working with the Asian American Community. She also offers services for program development for various healthcare, business, and organizational needs.",
+        "Dr. Manglani-Terranova offers clinical consultation to mental health professionals seeking guidance on providing culturally responsive, evidence-based treatments. With deep expertise in adapting interventions for diverse communities, she supports clinicians and organizations in developing programs that are both clinically sound and culturally attuned./She has designed and facilitated workshops across healthcare, higher education, and organizational settings, and brings a strong background in teaching psychology through active learning approaches. Her ability to translate complex clinical concepts into accessible, engaging material has earned her multiple teaching awards and fueled her passion for making psychological knowledge more inclusive and impactful.",
       details: [
         "Clinical Consultation",
         "Program Development",

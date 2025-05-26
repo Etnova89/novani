@@ -9,21 +9,19 @@ const FeesPage = () => {
           Fees
         </Typography>
         <Typography variant="body1" paragraph>
-          Our therapy sessions are priced to ensure accessibility while
-          maintaining the highest quality of care. Below is a breakdown of our
-          fees:
+          Dr. Manglani-Terranova believes therapy is a mutual investment between therapist and patient. To ensure each person receives thoughtful, individualized care, she intentionally maintains a small and focused practice. Below are fees for services:
         </Typography>
         <Typography variant="body1" paragraph>
-          - Individual Therapy: $100 per session
+          <strong>Individual Therapy:</strong> $275 per 55-min session
         </Typography>
         <Typography variant="body1" paragraph>
-          - Couples Therapy: $150 per session
+          <strong>Couple Therapy:</strong> $375 per 55-min session
         </Typography>
         <Typography variant="body1" paragraph>
-          - Family Therapy: $200 per session
+          <strong>Family Therapy:</strong> $400 per 55-min session
         </Typography>
         <Typography variant="body1" paragraph>
-          Please contact us for sliding scale options or insurance inquiries.
+          Please contact Dr. Manglani-Terranova for psychotherapy intensive packages.
         </Typography>
       </Box>
     </Container>

@@ -6,9 +6,9 @@ import { useAppTheme } from "../theme/hooks";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import PeopleAltOutlinedIcon from "@mui/icons-material/PeopleAltOutlined";
 import FamilyRestroomIcon from "@mui/icons-material/FamilyRestroom";
-// import CouplesTherapyImage from "../assets/images/pexels-ketut-subiyanto-4308057.jpg";
-// import individualTherapyImage from "../assets/images/pexels-alex-green-5699431.jpg";
-// import familyTherapyImage from "../assets/images/pexels-panditwiguna-1128317.jpg";
+import CouplesTherapyImage from "../assets/images/pexels-ketut-subiyanto-4308057.jpg";
+import individualTherapyImage from "../assets/images/pexels-alex-green-5699431.jpg";
+import familyTherapyImage from "../assets/images/pexels-panditwiguna-1128317.jpg";
 
 const HomePage = () => {
   const { theme, isMobile } = useAppTheme();
@@ -21,20 +21,20 @@ const HomePage = () => {
     {
       title: "Individual Therapy",
       icon: PersonOutlineIcon,
-      text: "<b>Dr. Manglani-Terranova</b> is a Harvard trained, licensed clinical psychologist offering compassionate therapy to individuals and couples in <b>Massachusetts, Florida, and (soon) California.</b> Through exploring emotions and learning practical skills for managing them, she is committed to helping patients build self-awareness, strengthen relationships, and cope with life stressors./She integrates evidence-based modalities, including Acceptance and Commitment Therapy (ACT), Emotionally Focused Therapy (EFT), and Narrative Therapy. Dr. Manglani-Terranova combines exercises and tools to provide <b>thoughtful, personalized care.</b>/She strives to create a safe, supportive space where clients can explore themselves, their relationships, and their life challenges with courage and clarity. Guided by her <b>core values of curiosity and cultural sensitivity,</b> Dr. Manglani-Taranova helps clients connect more deeply with themselves—because knowing oneself is often where meaningful change begins."
-      // image: individualTherapyImage,
+      text: "<b>Dr. Manglani-Terranova</b> is a Harvard trained, licensed clinical psychologist offering compassionate therapy to individuals and couples in <b>Massachusetts, Florida, and (soon) California.</b> Through exploring emotions and learning practical skills for managing them, she is committed to helping patients build self-awareness, strengthen relationships, and cope with life stressors./She integrates evidence-based modalities, including Acceptance and Commitment Therapy (ACT), Emotionally Focused Therapy (EFT), and Narrative Therapy. Dr. Manglani-Terranova combines exercises and tools to provide <b>thoughtful, personalized care.</b>/She strives to create a safe, supportive space where clients can explore themselves, their relationships, and their life challenges with courage and clarity. Guided by her <b>core values of curiosity and cultural sensitivity,</b> Dr. Manglani-Terranova helps clients connect more deeply with themselves—because knowing oneself is often where meaningful change begins.",
+      image: individualTherapyImage,
     },
     {
       title: "Couples Therapy",
       icon: PeopleAltOutlinedIcon,
-      text: "insert here."
-      // image: CouplesTherapyImage,
+      text: "insert here.",
+      image: CouplesTherapyImage,
     },
     {
       title: "Family Therapy",
       icon: FamilyRestroomIcon,
-      text: ""
-      // image: familyTherapyImage,
+      text: "",
+      image: familyTherapyImage,
     },
   ];
 
