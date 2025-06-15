@@ -21,21 +21,9 @@ const HomePage = () => {
     {
       title: "Individual Therapy",
       icon: PersonOutlineIcon,
-      text: "Every individual has a set of stories about who they are. Usually these stories are the most evocative moments of their lives strung together. These narratives can start to dictate what one can and cannot do leading to a limited way of living. In my individual work with patients, I help patients to identify their frequent flyer stories, the behaviors those stories provoke, and skills to use to unhook from these stories and live a life that aligns with their ideal version of themselves.",
+      text: "<b>Dr. Manglani-Terranova</b> is a Harvard trained, licensed clinical psychologist offering compassionate therapy to individuals and couples in <b>Massachusetts, Florida, and (soon) California.</b> Through exploring emotions and learning practical skills for managing them, she is committed to helping patients build self-awareness, strengthen relationships, and cope with life stressors./She integrates evidence-based modalities, including Acceptance and Commitment Therapy (ACT), Emotionally Focused Therapy (EFT), and Narrative Therapy. Dr. Manglani-Terranova combines exercises and tools to provide <b>thoughtful, personalized care.</b>/She strives to create a safe, supportive space where clients can explore themselves, their relationships, and their life challenges with courage and clarity. Guided by her <b>core values of curiosity and cultural sensitivity,</b> Dr. Manglani-Terranova helps clients connect more deeply with themselves—because knowing oneself is often where meaningful change begins.",
       image: individualTherapyImage,
-    },
-    {
-      title: "Couples Therapy",
-      icon: PeopleAltOutlinedIcon,
-      text: "Every couple has a dance when in conflict. One person criticizes and the other person counter-attacks. This dance likely continues until one withdraws or shuts down. Some of the foundational work in couples therapy is recognizing this dance, pausing, listening for the music (emotions and needs) and then co-constructing new moves that allow partners to sync up and move in harmony with one another. We use an integrative approach that combines research evidence and tools from various modalities to create a tailored treatment program for your unique relationship.",
-      image: CouplesTherapyImage,
-    },
-    {
-      title: "Family Therapy",
-      icon: FamilyRestroomIcon,
-      text: "Families are evolving systems, like seasons with naturally occurring changes. When normative changes are halted or obstructed, one or more people in the family may feel oppressed. In family therapy, I help members to learn ways of relating differently to one another. Changes in the family system can have powerful ripple effects such that identifying individual vulnerabilities and provisioning unmet needs can alter the entire system. I work with families to identify ways to free individuals from oppression and to help families strengthen connections and growth in ways that support health and well-being of individuals with the family and larger systems in which they reside.",
-      image: familyTherapyImage,
-    },
+    }
   ];
 
   return (

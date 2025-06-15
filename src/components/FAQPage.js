@@ -20,13 +20,28 @@ const FAQPage = () => {
           <strong>Q: How long are sessions?</strong>
         </Typography>
         <Typography variant="body2" paragraph>
-          A: Sessions typically last 50 minutes.
+          A: Sessions typically last 55 minutes. Therapy sessions may be scheduled for 75 or 90-minutes, with fees adjusted accordingly based on the extended duration.
         </Typography>
         <Typography variant="body1" paragraph>
           <strong>Q: Do you accept insurance?</strong>
         </Typography>
         <Typography variant="body2" paragraph>
-          A: Please contact us to discuss insurance options and coverage.
+          A: No, Dr. Manglani-Terranova is an out-of-network provider. However, she offers monthly superbills that you can submit to your insurance company for potential reimbursement directly to you. Below are questions to ask your insurance for out-of-network coverage for behavioral health:  
+          Do I have out-of-network benefits for behavioral health?
+If so, what is the percentage covered?
+Is there a deductible I need to meet before that percentage is covered?
+Is there a session limit?
+How do I submit for reimbursement?
+What is the reimbursement for the code: 90791 (Intake evaluation); 90837 (Individual therapy), 90847 (Couple/Family therapy)
+What does Dr. Manglani-Terranova specialize in?
+Dr. Manglani-Terranova specializes in the following: 
+Individuals (e.g., life transitions, relational stress, depression/anxiety), couples and families (e.g., multi-heritage couples, intergenerational trauma, life transitions), and behavioral medicine (e.g., adjustment to new chronic diagnoses)
+
+What is the office located?
+Dr. Manglani-Terranova operates from Cambridge, MA. She also offers virtual services to people in MA, FL, and CA.
+
+How does virtual therapy work? 
+</strong>
         </Typography>
       </Box>
     </Container>
