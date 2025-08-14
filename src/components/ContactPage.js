@@ -1,14 +1,30 @@
-import React, { useState } from 'react';
-import { 
-  Typography, Container, Paper, TextField, Button, Box, Snackbar, Alert
-} from '@mui/material';
-import { useForm, Controller } from 'react-hook-form';
-import { LoadingButton } from '@mui/lab';
+import React, { useState } from "react";
+import {
+  Typography,
+  Container,
+  Paper,
+  TextField,
+  Button,
+  Box,
+  Snackbar,
+  Alert,
+} from "@mui/material";
+import { useForm, Controller } from "react-hook-form";
+import { LoadingButton } from "@mui/lab";
 
 const ContactPage = () => {
-  const { control, handleSubmit, reset, formState: { errors } } = useForm();
+  const {
+    control,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [snackbar, setSnackbar] = useState({ open: false, message: '', severity: 'success' });
+  const [snackbar, setSnackbar] = useState({
+    open: false,
+    message: "",
+    severity: "success",
+  });
 
   const onSubmit = async (data) => {
     setIsSubmitting(true);
@@ -16,20 +32,28 @@ const ContactPage = () => {
       // Here you would typically send the data to your server
       // For demonstration, we'll just log it and simulate a delay
       console.log(data);
-      await new Promise(resolve => setTimeout(resolve, 1000)); // Simulate server delay
-      
-      setSnackbar({ open: true, message: 'Message sent successfully!', severity: 'success' });
+      await new Promise((resolve) => setTimeout(resolve, 1000)); // Simulate server delay
+
+      setSnackbar({
+        open: true,
+        message: "Message sent successfully!",
+        severity: "success",
+      });
       reset(); // Reset form fields
     } catch (error) {
-      console.error('Error submitting form:', error);
-      setSnackbar({ open: true, message: 'Failed to send message. Please try again.', severity: 'error' });
+      console.error("Error submitting form:", error);
+      setSnackbar({
+        open: true,
+        message: "Failed to send message. Please try again.",
+        severity: "error",
+      });
     } finally {
       setIsSubmitting(false);
     }
   };
 
   const handleCloseSnackbar = (event, reason) => {
-    if (reason === 'clickaway') {
+    if (reason === "clickaway") {
       return;
     }
     setSnackbar({ ...snackbar, open: false });
@@ -37,12 +61,20 @@ const ContactPage = () => {
 
   return (
     <Container maxWidth="md" sx={{ mt: 4, mb: 4 }}>
-      <Typography variant="h1" gutterBottom sx={{ textAlign: 'center', mb: 6 }}>
+      <Typography variant="h1" gutterBottom sx={{ textAlign: "center", mb: 6 }}>
         Contact Us
       </Typography>
-      
+
       <Paper elevation={3} sx={{ p: 4 }}>
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <Typography
+          variant="h5"
+          gutterBottom
+          sx={{ textAlign: "center", mb: 6 }}
+        >
+          To schedule a consultation please send an email to
+          Heena@novantherapy.com or call (617)-520-4397
+        </Typography>
+        {/* <form onSubmit={handleSubmit(onSubmit)}>
           <Controller
             name="name"
             control={control}
@@ -129,11 +161,19 @@ const ContactPage = () => {
               Send Message
             </LoadingButton>
           </Box>
-        </form>
+        </form> */}
       </Paper>
 
-      <Snackbar open={snackbar.open} autoHideDuration={6000} onClose={handleCloseSnackbar}>
-        <Alert onClose={handleCloseSnackbar} severity={snackbar.severity} sx={{ width: '100%' }}>
+      <Snackbar
+        open={snackbar.open}
+        autoHideDuration={6000}
+        onClose={handleCloseSnackbar}
+      >
+        <Alert
+          onClose={handleCloseSnackbar}
+          severity={snackbar.severity}
+          sx={{ width: "100%" }}
+        >
           {snackbar.message}
         </Alert>
       </Snackbar>

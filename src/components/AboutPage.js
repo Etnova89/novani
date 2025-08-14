@@ -87,7 +87,7 @@ const AboutPage = () => {
         </Grid>
       </Paper>
 
-      <Paper elevation={3} sx={{ p: 4, mb: 4 }}>
+      {/* <Paper elevation={3} sx={{ p: 4, mb: 4 }}>
         <Typography variant="h4" gutterBottom color="primary">
           Specializations
         </Typography>
@@ -120,7 +120,7 @@ const AboutPage = () => {
             />
           </ListItem>
         </List>
-      </Paper>
+      </Paper> */}
 
       <Paper elevation={3} sx={{ p: 4, mb: 4 }}>
         <Typography variant="h4" gutterBottom color="primary">
@@ -141,17 +141,8 @@ const AboutPage = () => {
               <School color="secondary" />
             </ListItemIcon>
             <ListItemText
-              primary="Licensed Clinical Psychologist - Massachusetts, Florida, (California)"
+              primary="Licensed Clinical Psychologist - California, Massachusetts, & Florida"
               secondary="Massachusetts State Board of Psychology"
-            />
-          </ListItem>
-          <ListItem>
-            <ListItemIcon>
-              <School color="secondary" />
-            </ListItemIcon>
-            <ListItemText
-              primary="Instructor in Psychology - Massachusetts General Hospital"
-              secondary=""
             />
           </ListItem>
         </List>

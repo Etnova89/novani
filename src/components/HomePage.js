@@ -1,14 +1,9 @@
-// HomePage.js
 import React from "react";
 import { Typography, Button, Container, Box, Grid2, Icon } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { useAppTheme } from "../theme/hooks";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
-import PeopleAltOutlinedIcon from "@mui/icons-material/PeopleAltOutlined";
-import FamilyRestroomIcon from "@mui/icons-material/FamilyRestroom";
-import CouplesTherapyImage from "../assets/images/pexels-ketut-subiyanto-4308057.jpg";
-import individualTherapyImage from "../assets/images/pexels-alex-green-5699431.jpg";
-import familyTherapyImage from "../assets/images/pexels-panditwiguna-1128317.jpg";
+import heenaChairImage from "../assets/images/Heena_Chair.jpg";
 
 const HomePage = () => {
   const { theme, isMobile } = useAppTheme();
@@ -17,41 +12,69 @@ const HomePage = () => {
   const handleConsultationClick = () => {
     navigate("/contact");
   };
+
+  const handleAboutClick = () => {
+    navigate("/about");
+  };
+
   const services = [
     {
       title: "Individual Therapy",
       icon: PersonOutlineIcon,
       text: (
         <>
-          <Typography component="span" fontWeight="bold">
-            Dr. Manglani-Terranova
+          <Typography variant="h4" component="span" fontWeight="bold">
+            Dr. Heena Manglani-Terranova
           </Typography>{" "}
-          is a Harvard trained, licensed clinical psychologist offering
-          compassionate therapy to individuals and couples in{" "}
-          <Typography component="span" fontWeight="bold">
-            Massachusetts, Florida, and (soon) California.
-          </Typography>{" "}
-          Through exploring emotions and learning practical skills for managing
-          them, she is committed to helping patients build self-awareness,
-          strengthen relationships, and cope with life stressors./She integrates
-          evidence-based modalities, including Acceptance and Commitment Therapy
-          (ACT), Emotionally Focused Therapy (EFT), and Narrative Therapy. Dr.
-          Manglani-Terranova combines exercises and tools to provide{" "}
-          <Typography component="span" fontWeight="bold">
-            thoughtful, personalized care.
+          <Typography
+            variant="body1"
+            color="text.secondary"
+            sx={{ marginBottom: "1.5rem" }}
+          >
+            is a Harvard trained, licensed clinical psychologist offering
+            compassionate therapy to individuals and couples in{" "}
+            <Typography component="span" fontWeight="bold">
+              California, Massachusetts, and Florida.
+            </Typography>{" "}
           </Typography>
-          /She strives to create a safe, supportive space where clients can
-          explore themselves, their relationships, and their life challenges
-          with courage and clarity. Guided by her{" "}
-          <Typography component="span" fontWeight="bold">
-            core values of curiosity and cultural sensitivity,
-          </Typography>{" "}
-          Dr. Manglani-Terranova helps clients connect more deeply with
-          themselves—because knowing oneself is often where meaningful change
-          begins.
+          <Typography
+            variant="body1"
+            color="text.secondary"
+            sx={{ marginBottom: "1.5rem" }}
+          >
+            Through exploring emotions and learning practical skills for
+            managing them, she is committed to helping patients build
+            self-awareness, strengthen relationships, and cope with life
+            stressors.{" "}
+          </Typography>
+          <Typography
+            variant="body1"
+            color="text.secondary"
+            sx={{ marginBottom: "1.5rem" }}
+          >
+            She integrates evidence-based modalities, including Acceptance and
+            Commitment Therapy (ACT), Emotionally Focused Therapy (EFT), and
+            Narrative Therapy. Dr. Manglani-Terranova combines exercises and
+            tools to provide{" "}
+            <Typography component="span" fontWeight="bold">
+              thoughtful, personalized care.
+            </Typography>
+          </Typography>
+          <Typography
+            variant="body1"
+            color="text.secondary"
+            sx={{ marginBottom: "1.5rem" }}
+          >
+            She strives to create a safe, supportive space where clients can
+            explore themselves, their relationships, and their life challenges
+            with courage and clarity. Guided by her core values of curiosity and
+            cultural sensitivity, Dr. Manglani-Terranova helps clients connect
+            more deeply with themselves—because knowing oneself is often where
+            meaningful change begins.
+          </Typography>
         </>
       ),
-      image: individualTherapyImage,
+      image: heenaChairImage,
     },
   ];
 
@@ -77,138 +100,67 @@ const HomePage = () => {
               color: "text.primary",
             }}
           >
-            Welcome to Novani Therapy
+            Welcome to Novani Therapy & Wellness
           </Typography>
           <Typography variant="h5" sx={{ mb: 4, color: "text.secondary" }}>
             Empowering you on your journey to mental wellness and personal
             growth.
           </Typography>
-          <Button
-            variant="contained"
-            color="secondary"
-            size="large"
-            onClick={handleConsultationClick}
-          >
-            Schedule a Consultation
-          </Button>
         </Box>
 
         <Box sx={{ mb: 8 }}>
-          <Typography
-            variant="h2"
-            gutterBottom
-            sx={{
-              textAlign: "center",
-              color: "text.primary",
-            }}
-          >
-            About Us
-          </Typography>
-          <Typography
-            variant="body1"
-            color="text.secondary"
-            sx={{
-              textAlign: "center",
-            }}
-          >
-            At Novani Therapy & Wellness, we believe in providing compassionate,
-            evidence-based care to help you navigate life's challenges.
-          </Typography>
-        </Box>
+          <Box sx={{ position: "relative", display: "flex", gap: 2, mb: 4 }}>
+            <Box
+              sx={{
+                flex: "2",
+                bgcolor: "custom.accent1",
+                borderRadius: 1,
+                boxShadow: 1,
+                p: 3,
+                zIndex: 1,
+                position: "relative",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+                textAlign: "center",
+              }}
+            >
+              <Typography
+                variant="body2"
+                color="text.secondary"
+                sx={{
+                  wordWrap: "break-word",
+                }}
+              >
+                {services[0].text}
+              </Typography>
+            </Box>
 
-        <Box sx={{ mb: 8 }}>
-          <Typography
-            variant="h2"
-            gutterBottom
-            sx={{
-              textAlign: "center",
-              color: "text.primary",
-            }}
-          >
-            Our Services
-          </Typography>
-          <Grid2 container spacing={4}>
-            {services.map((service) => (
-              <Grid2 item xs={12} md={4} key={service.title}>
-                <Box
-                  sx={{
-                    position: "relative",
-                    height: "100%",
-                    pt: "20px",
-                    display: "flex",
-                    justifyContent: "center",
-                  }}
-                >
-                  <Box
-                    sx={{
-                      position: "relative",
-                      textAlign: "center",
-                      p: 3,
-                      pb: 4,
-                      bgcolor: "custom.accent1",
-                      borderRadius: 1,
-                      boxShadow: 1,
-                      zIndex: 1,
-                      width: "85%",
-                      "& > *": {
-                        maxWidth: "100%",
-                      },
-                    }}
-                  >
-                    <Icon
-                      component={service.icon}
-                      sx={{
-                        fontSize: 40,
-                        mb: 2,
-                        color: "primary.main",
-                      }}
-                    />
-                    <Typography
-                      variant="h5"
-                      component="h3"
-                      gutterBottom
-                      color="text.primary"
-                    >
-                      {service.title}
-                    </Typography>
-                    <Typography
-                      variant="body2"
-                      color="text.secondary"
-                      sx={{
-                        wordWrap: "break-word",
-                        pr: 1,
-                      }}
-                    >
-                      {service.text}
-                    </Typography>
-                  </Box>
-                  <Box
-                    sx={{
-                      backgroundColor: "custom.accent1",
-                      position: "absolute",
-                      right: "2%",
-                      top: 0,
-                      width: "25%",
-                      zIndex: 2,
-                      height: "145px",
-                      "& img": {
-                        width: "100%",
-                        height: "100%",
-                        objectFit: "cover",
-                        borderRadius: 1,
-                        boxShadow: 2,
-                      },
-                    }}
-                  >
-                    <img
-                      src={service.image}
-                      alt={`${service.title} illustration`}
-                    />
-                  </Box>
-                </Box>
-              </Grid2>
-            ))}
-          </Grid2>
+            <Box
+              sx={{
+                flex: "1",
+                position: "relative",
+                marginLeft: "-2rem",
+                zIndex: 2,
+                display: "flex",
+                alignItems: "flex-start",
+              }}
+            >
+              <img
+                src={heenaChairImage}
+                alt="Dr. Heena Manglani-Terranova"
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  maxHeight: "400px",
+                  objectFit: "cover",
+                  borderRadius: "8px",
+                  boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
+                }}
+              />
+            </Box>
+          </Box>
         </Box>
 
         <Box sx={{ textAlign: "center" }}>
@@ -223,9 +175,9 @@ const HomePage = () => {
             variant="contained"
             color="secondary"
             size="large"
-            onClick={handleConsultationClick}
+            onClick={handleAboutClick}
           >
-            Contact Us Today
+            Learn more about Dr. Manglani-Terranova
           </Button>
         </Box>
       </Container>
