@@ -24,53 +24,37 @@ const HomePage = () => {
       text: (
         <>
           <Typography variant="h4" component="span" fontWeight="bold">
-            Dr. Heena Manglani-Terranova
+            Meet Dr. Heena Manglani-Terranova
           </Typography>{" "}
           <Typography
             variant="body1"
             color="text.secondary"
             sx={{ marginBottom: "1.5rem" }}
           >
-            is a Harvard trained, licensed clinical psychologist offering
-            compassionate therapy to individuals and couples in{" "}
-            <Typography component="span" fontWeight="bold">
-              California, Massachusetts, and Florida.
-            </Typography>{" "}
+            I’m a Harvard-trained clinical psychologist offering therapy for
+            individuals, couples, and families in California, Massachusetts, and
+            Florida.
           </Typography>
           <Typography
             variant="body1"
             color="text.secondary"
             sx={{ marginBottom: "1.5rem" }}
           >
-            Through exploring emotions and learning practical skills for
-            managing them, she is committed to helping patients build
-            self-awareness, strengthen relationships, and cope with life
-            stressors.{" "}
+            My approach blends compassion with practical tools, helping you
+            better understand yourself, strengthen your relationships, and
+            navigate life’s stressors with resilience. I draw from
+            evidence-based methods including Acceptance and Commitment Therapy
+            (ACT), Emotion Focused Therapy (EFT), and Narrative Therapy—but
+            always tailor care to fit you.
           </Typography>
           <Typography
             variant="body1"
             color="text.secondary"
             sx={{ marginBottom: "1.5rem" }}
           >
-            She integrates evidence-based modalities, including Acceptance and
-            Commitment Therapy (ACT), Emotionally Focused Therapy (EFT), and
-            Narrative Therapy. Dr. Manglani-Terranova combines exercises and
-            tools to provide{" "}
-            <Typography component="span" fontWeight="bold">
-              thoughtful, personalized care.
-            </Typography>
-          </Typography>
-          <Typography
-            variant="body1"
-            color="text.secondary"
-            sx={{ marginBottom: "1.5rem" }}
-          >
-            She strives to create a safe, supportive space where clients can
-            explore themselves, their relationships, and their life challenges
-            with courage and clarity. Guided by her core values of curiosity and
-            cultural sensitivity, Dr. Manglani-Terranova helps clients connect
-            more deeply with themselves—because knowing oneself is often where
-            meaningful change begins.
+            At the core of my work is creating a safe, supportive space where
+            you can explore, grow, and move toward the life and connections you
+            want.
           </Typography>
         </>
       ),
@@ -144,7 +128,7 @@ const HomePage = () => {
                 marginLeft: "-2rem",
                 zIndex: 2,
                 display: "flex",
-                alignItems: "flex-start",
+                alignItems: "stretch", // Ensures the image stretches to match the text box height
               }}
             >
               <img
@@ -152,9 +136,8 @@ const HomePage = () => {
                 alt="Dr. Heena Manglani-Terranova"
                 style={{
                   width: "100%",
-                  height: "auto",
-                  maxHeight: "400px",
-                  objectFit: "cover",
+                  height: "100%", // Matches the height of the parent container
+                  objectFit: "cover", // Ensures the image scales properly
                   borderRadius: "8px",
                   boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
                 }}
@@ -167,7 +150,7 @@ const HomePage = () => {
           <Typography variant="h2" gutterBottom color="text.primary">
             Start with a free consultation
           </Typography>
-          <Typography variant="body1" paragraph color="text.secondary">
+          <Typography variant="h6" paragraph color="text.secondary">
             Contact Dr. Manglani-Terranova to learn whether her practice is an
             ideal fit for your mental health and wellness needs.
           </Typography>
@@ -176,6 +159,10 @@ const HomePage = () => {
             color="secondary"
             size="large"
             onClick={handleAboutClick}
+            sx={{
+              fontSize: "1.2rem", // Increase the font size
+              padding: "10px 20px", // Optional: Adjust padding for better appearance
+            }}
           >
             Learn more about Dr. Manglani-Terranova
           </Button>

@@ -72,7 +72,7 @@ const ContactPage = () => {
           sx={{ textAlign: "center", mb: 6 }}
         >
           To schedule a consultation please send an email to
-          Heena@novantherapy.com or call (617)-520-4397
+          heena@novantherapy.com or call (617)-520-4397
         </Typography>
         {/* <form onSubmit={handleSubmit(onSubmit)}>
           <Controller

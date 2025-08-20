@@ -16,6 +16,7 @@ import {
   Psychology,
   Science,
   HealthAndSafety,
+  Spa,
 } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
 import { useAppTheme } from "../theme/hooks";
@@ -69,9 +70,9 @@ const AboutPage = () => {
               understanding of the unique challenges faced by the South Asian
               community. Dr. Manglani-Terranova uses a culturally sensitive and
               curious approach to understand the barriers to living a meaningful
-              life, and provides culturally-attuned care that leverages
-              narratives of strength and resilience in her patients and provides
-              directions for values-based living.
+              life. She provides culturally-attuned care that focuses on
+              strength and resilience to support her patients in taking actions
+              that align with their personally-chosen values.
             </Typography>
             <Typography variant="body1">
               In addition to her clinical work, Dr. Manglani-Terranova is a
@@ -80,8 +81,8 @@ const AboutPage = () => {
               illness (i.e. multiple sclerosis). Her unique focus on relational
               factors positions her to study individuals within the larger
               systems in which they function and to leveral a social justice
-              lens to bridge the gap between mental health and chronic disease
-              and holistic care.
+              lens to bridge the gap between mental health, chronic disease, and
+              holistic care.
             </Typography>
           </Grid>
         </Grid>
@@ -129,16 +130,29 @@ const AboutPage = () => {
         <List>
           <ListItem>
             <ListItemIcon>
+              <Psychology color="secondary" />
+            </ListItemIcon>
+            <ListItemText primary="Pre-doctoral Internship & Postdoctoral Fellowship - Massachusetts General Hospital/Harvard Medical School" />
+          </ListItem>
+          <ListItem>
+            <ListItemIcon>
               <School color="secondary" />
             </ListItemIcon>
             <ListItemText
-              primary="Pre-doctoral Internship & Postdoctoral Fellowship - Massachusetts General Hospital/Harvard Medical School/Ph.D. in Clinical Psychology - The Ohio State University/BA in Psychology - Rutgers University"
+              primary="Ph.D. in Clinical Psychology - The Ohio State University"
               secondary="Specialization in Health Psychology"
             />
           </ListItem>
           <ListItem>
             <ListItemIcon>
               <School color="secondary" />
+            </ListItemIcon>
+            <ListItemText primary="BA in Psychology - Rutgers University" />
+          </ListItem>
+
+          <ListItem>
+            <ListItemIcon>
+              <Spa color="secondary" />
             </ListItemIcon>
             <ListItemText
               primary="Licensed Clinical Psychologist - California, Massachusetts, & Florida"

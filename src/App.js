@@ -54,7 +54,15 @@ const AppContent = () => {
           bgcolor: "background.default",
         }}
       >
-        <AppBar position="static" elevation={0}>
+        <AppBar
+          position="static"
+          sx={{
+            backgroundColor: theme.palette.primary.main,
+            height: "80px", // Increase the height of the navbar
+            display: "flex",
+            justifyContent: "center", // Center the content vertically
+          }}
+        >
           <Toolbar>
             <Typography
               variant="h6"
@@ -62,8 +70,7 @@ const AppContent = () => {
               to="/"
               sx={{
                 flexGrow: 1,
-                fontWeight: "bold",
-                color: theme.palette.primary.light,
+                color: "white",
                 textDecoration: "none",
                 "&:hover": {
                   textDecoration: "none",
@@ -72,22 +79,70 @@ const AppContent = () => {
             >
               NOVANI THERAPY
             </Typography>
-            <Button color="inherit" component={Link} to="/">
+            <Button
+              color="inherit"
+              component={Link}
+              to="/"
+              sx={{
+                fontSize: "1.2rem", // Increase font size for buttons
+                margin: "0 10px", // Add spacing between buttons
+              }}
+            >
               Home
             </Button>
-            <Button color="inherit" component={Link} to="/services">
+            <Button
+              color="inherit"
+              component={Link}
+              to="/services"
+              sx={{
+                fontSize: "1.2rem",
+                margin: "0 10px",
+              }}
+            >
               Services
             </Button>
-            <Button color="inherit" component={Link} to="/about">
+            <Button
+              color="inherit"
+              component={Link}
+              to="/about"
+              sx={{
+                fontSize: "1.2rem",
+                margin: "0 10px",
+              }}
+            >
               About
             </Button>
-            <Button color="inherit" component={Link} to="/contact">
+            <Button
+              color="inherit"
+              component={Link}
+              to="/contact"
+              sx={{
+                fontSize: "1.2rem",
+                margin: "0 10px",
+              }}
+            >
               Contact
             </Button>
-            <Button color="inherit" component={Link} to="/fees">
+            <Button
+              color="inherit"
+              component={Link}
+              to="/fees"
+              sx={{
+                fontSize: "1.2rem",
+                margin: "0 10px",
+              }}
+            >
               Fees
             </Button>
-            <Button color="inherit" component={Link} to="/faq">
+            <Button
+              color="inherit"
+              component={Link}
+              to="/faq"
+              sx={{
+                fontSize: "1.2rem",
+                margin: "0 10px",
+              }}
+            >
               FAQ
             </Button>
             <ThemeToggle />

@@ -29,24 +29,54 @@ const FAQPage = () => {
     },
     {
       question: "Do you accept insurance?",
-      answer:
-        "No, Dr. Manglani-Terranova is an out-of-network provider. However, she offers monthly superbills that you can submit to your insurance company for potential reimbursement directly to you. Below are questions to ask your insurance for out-of-network coverage for behavioral health: Do I have out-of-network benefits for behavioral health? If so, what is the percentage covered? Is there a deductible I need to meet before that percentage is covered? Is there a session limit? How do I submit for reimbursement? What is the reimbursement for the code: 90791 (Intake evaluation); 90837 (Individual therapy), 90847 (Couple/Family therapy)",
+      answer: (
+        <>
+          No, Dr. Manglani-Terranova is an out-of-network provider. However, she
+          offers monthly superbills that you can submit to your insurance
+          company for potential reimbursement directly to you. Below are
+          questions to ask your insurance for out-of-network coverage for
+          behavioral health:
+          <ul>
+            <li>Do I have out-of-network benefits for behavioral health?</li>
+            <li>If so, what is the percentage covered?</li>
+            <li>
+              Is there a deductible I need to meet before that percentage is
+              covered?
+            </li>
+            <li>How do I submit for reimbursement?</li>
+            <li>
+              What is the reimbursement for the code: 90791 (Intake evaluation);
+              90837 (Individual therapy), 90847 (Couple/Family therapy)"
+            </li>
+            <li>Is there a session limit?</li>
+          </ul>{" "}
+        </>
+      ),
     },
-    // {
-    //   question: "What does Dr. Manglani-Terranova specialize in?",
-    //   answer:
-    //     "Dr. Manglani-Terranova specializes in the following: Individuals (e.g., life transitions, relational stress, depression/anxiety), couples and families (e.g., multi-heritage couples, intergenerational trauma, life transitions), and behavioral medicine (e.g., adjustment to new chronic diagnoses)",
-    // },
-    // {
-    //   question: "Where is the office located?",
-    //   answer:
-    //     "Dr. Manglani-Terranova operates from Cambridge, MA. She also offers virtual services to people in MA, FL, and CA.",
-    // },
-    // {
-    //   question: "How does virtual therapy work?",
-    //   answer:
-    //     "Virtual therapy sessions are conducted through secure, HIPAA-compliant video conferencing platforms, allowing you to receive therapy from the comfort of your own space.",
-    // },
+    {
+      question: "Where are sessions held?",
+      answer:
+        "Currently, all sessions are provided virtually using HIPPA-compliant software. This allows patients the flexibility to meet with Dr. Heena from the comfort of their home.",
+    },
+    {
+      question: "What is the No Surprises Act?",
+      answer: (
+        <>
+          All patients have the right to receive a “Good Faith Estimate”
+          explaining how much your mental health care will cost. Patients can
+          request an estimate before scheduling or at any point during
+          treatment. For more information:{" "}
+          <a
+            href="https://www.cms.gov/nosurprises"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "#4CAF50", textDecoration: "underline" }}
+          >
+            https://www.cms.gov/nosurprises
+          </a>
+        </>
+      ),
+    },
   ];
 
   return (
@@ -113,7 +143,7 @@ const FAQPage = () => {
                   }}
                 >
                   <Typography
-                    variant="body1"
+                    variant="h6"
                     fontWeight="bold"
                     color="text.primary"
                   >
@@ -126,7 +156,7 @@ const FAQPage = () => {
                     pt: 0,
                   }}
                 >
-                  <Typography variant="body2" color="text.secondary">
+                  <Typography variant="body1" color="text.secondary">
                     {faq.answer}
                   </Typography>
                 </AccordionDetails>

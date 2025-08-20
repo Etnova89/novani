@@ -3,14 +3,14 @@ import { createTheme } from "@mui/material/styles";
 // Calming color palette for light theme
 const lightTheme = {
   primary: {
-    main: "#33658A", //  bright maritime blue
-    light: "#A5C0BE",
-    dark: "#5E7A75",
+    main: "#2B6777", //  green
+    light: "#C8D8E4",
+    dark: "#2B6777",
     contrastText: "#ffffff",
   },
   secondary: {
-    main: "#FF9F93", // coral
-    light: "#7C9D96", //soft sage
+    main: "#52ab98", // coral
+    light: "#2B6777", //soft sage
     dark: "#C5A497",
     contrastText: "#000000",
   },
@@ -24,7 +24,7 @@ const lightTheme = {
   },
   // Additional custom colors for specific uses
   custom: {
-    accent1: "#B7C4CF", // Soft blue-gray
+    accent1: "#DBE2E7", // Soft blue-gray
     accent2: "#DED0B6", // Warm beige
     accent3: "#BBCEC2", // Sage accent
   },
@@ -62,7 +62,8 @@ const darkTheme = {
 // Common theme settings
 const commonThemeSettings = {
   typography: {
-    fontFamily: '"Palatino Linotype", "Palatino", "Book Antiqua", "Georgia", serif',
+    fontFamily:
+      '"Palatino Linotype", "Palatino", "Book Antiqua", "Georgia", serif',
     h1: {
       fontWeight: 500,
       fontSize: "2.5rem",
