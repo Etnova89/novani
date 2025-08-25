@@ -93,10 +93,14 @@ const HomePage = () => {
         </Box>
 
         <Box sx={{ mb: 8 }}>
-          <Box sx={{ position: "relative", display: "flex", gap: 2, mb: 4 }}>
-            <Box
+          <Grid2 container spacing={2} alignItems="center">
+            {/* Text Section */}
+            <Grid2
+              item
+              xs={12}
+              sm={6}
+              order={{ xs: 2, sm: 1 }} // On mobile, text appears below the image
               sx={{
-                flex: "2",
                 bgcolor: "custom.accent1",
                 borderRadius: 1,
                 boxShadow: 1,
@@ -119,16 +123,19 @@ const HomePage = () => {
               >
                 {services[0].text}
               </Typography>
-            </Box>
+            </Grid2>
 
-            <Box
+            {/* Image Section */}
+            <Grid2
+              item
+              xs={12}
+              sm={6}
+              order={{ xs: 1, sm: 2 }} // On mobile, image appears above the text
               sx={{
-                flex: "1",
                 position: "relative",
-                marginLeft: "-2rem",
                 zIndex: 2,
                 display: "flex",
-                alignItems: "stretch", // Ensures the image stretches to match the text box height
+                alignItems: "stretch",
               }}
             >
               <img
@@ -142,8 +149,8 @@ const HomePage = () => {
                   boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
                 }}
               />
-            </Box>
-          </Box>
+            </Grid2>
+          </Grid2>
         </Box>
 
         <Box sx={{ textAlign: "center" }}>

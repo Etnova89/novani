@@ -58,12 +58,18 @@ const AppContent = () => {
           position="static"
           sx={{
             backgroundColor: theme.palette.primary.main,
-            height: "80px", // Increase the height of the navbar
+            height: { xs: "auto", sm: "80px" }, // Adjust height for mobile
+            padding: { xs: "10px", sm: "0" }, // Add padding for smaller screens
             display: "flex",
-            justifyContent: "center", // Center the content vertically
+            justifyContent: "center",
           }}
         >
-          <Toolbar>
+          <Toolbar
+            sx={{
+              flexWrap: "wrap", // Ensure items wrap on smaller screens
+              justifyContent: "space-between",
+            }}
+          >
             <Typography
               variant="h6"
               component={Link}
