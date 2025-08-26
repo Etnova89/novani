@@ -59,6 +59,39 @@ const FAQPage = () => {
         "Currently, all sessions are provided virtually using HIPPA-compliant software. This allows patients the flexibility to meet with Dr. Heena from the comfort of their home.",
     },
     {
+      question: "How is therapy different from coaching and consulting?",
+      answer: (
+        <>
+          Therapy focuses on mental health, emotional well-being, and healing.
+          It often involves exploring past experiences, managing symptoms, and
+          developing coping strategies. Therapy is appropriate when there are
+          concerns such as anxiety, depression, trauma, or relationship
+          difficulties. Payment is typically per session, and patients receive
+          statements (superbills) for insurance reimbursement, if eligible.{" "}
+          <br />
+          <br />
+          Coaching and Consulting services are future-oriented and goal-driven.
+          They focus on personal growth, skill-building, and performance
+          enhancement rather than diagnosing or treating mental health
+          conditions. Coaching is ideal for individuals seeking clarity,
+          accountability, and actionable strategies to achieve specific goals.
+          Consulting often involves working with organizations or teams to
+          improve systems, communication, and workplace well-being. These
+          services are not covered by health insurance because they do not
+          involve mental health treatment or a diagnosis. Payment is usually
+          out-of-pocket and often structured as:
+          <ul>
+            <li>
+              Per session or per hour Flat-rate packages for individuals or
+              organizations
+            </li>
+            <li>Customized pricing for workshops</li>
+            <li>consulting engagements</li>
+          </ul>{" "}
+        </>
+      ),
+    },
+    {
       question: "What is the No Surprises Act?",
       answer: (
         <>

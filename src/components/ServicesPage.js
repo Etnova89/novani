@@ -98,6 +98,54 @@ const ServicesPage = () => {
         "Systemic Family Therapy",
       ],
     },
+    {
+      title: "Coaching & Consulting",
+      description: (
+        <>
+          <strong>Coaching:</strong> I offer coaching services for individuals
+          seeking personal or professional growth without a mental health
+          diagnosis. Coaching focuses on building your vision, confidence, and
+          actionable strategies to help you achieve your goals—whether that’s{" "}
+          <strong>
+            improving communication, navigating life transitions, or enhancing
+            leadership skills.
+          </strong>{" "}
+          Unlike therapy, coaching is future-oriented and goal-driven, helping
+          you move from where you are to where you want to be.{" "}
+          <strong>My approach is culturally sensitive and inclusive,</strong>{" "}
+          recognizing how factors such as culture, race, gender, family
+          dynamics, and life experiences shape your goals and challenges.
+          Sessions are collaborative, strengths-based, and designed to empower
+          you while respecting the diverse contexts that make you who you are.{" "}
+          <br />
+          <br />
+          <strong>Consulting:</strong> I also offer consulting services for
+          organizations and teams seeking to{" "}
+          <strong>
+            strengthen well-being, communication, and performance in their work
+            environments.
+          </strong>{" "}
+          I also offer speaking engagements and interactive workshops on topics
+          such as stress management, health & wellness, and team collaboration.
+          Each session blends{" "}
+          <strong>science-backed strategies with practical tools</strong>
+          that participants can immediately apply in their personal and
+          professional lives. Each engagement is{" "}
+          <strong>tailored to your organization’s goals,</strong> whether you’re
+          looking for a keynote presentation, a leadership training, or an
+          immersive workshop experience
+        </>
+      ),
+      details: [
+        "Building Resilience in Times of Change",
+        "Stress Management Strategies for High-Performing Teams",
+        "Effective Communication for Stronger Relationships",
+        "Emotional Intelligence in Leadership",
+        "Preventing Burnout and Fostering Well-being",
+        "Navigating Life Transitions with Confidence",
+        "Mind-Body Approaches to Mental Health",
+      ],
+    },
   ];
 
   const navigate = useNavigate();
@@ -137,7 +185,7 @@ const ServicesPage = () => {
               </Typography>
               <Box sx={{ mt: 2, mb: 3 }}>
                 <Typography variant="h6" gutterBottom>
-                  Modalities and Approaches:
+                  Modalities, Approaches, & Topics:
                 </Typography>
                 <ul>
                   {service.details.map((detail, idx) => (
