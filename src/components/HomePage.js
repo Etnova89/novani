@@ -71,6 +71,11 @@ const HomePage = () => {
         flexDirection: "column",
         bgcolor: "background.default",
         color: "text.primary",
+        animation: "fadeIn 1.5s ease-in-out",
+        "@keyframes fadeIn": {
+          from: { opacity: 0 },
+          to: { opacity: 1 },
+        },
       }}
     >
       <Container maxWidth="lg" sx={{ mt: 8, mb: 8, flexGrow: 1 }}>
@@ -154,13 +159,6 @@ const HomePage = () => {
         </Box>
 
         <Box sx={{ textAlign: "center" }}>
-          <Typography variant="h2" gutterBottom color="text.primary">
-            Start with a free consultation
-          </Typography>
-          <Typography variant="h6" paragraph color="text.secondary">
-            Contact Dr. Manglani-Terranova to learn whether her practice is an
-            ideal fit for your mental health and wellness needs.
-          </Typography>
           <Button
             variant="contained"
             color="secondary"
@@ -171,7 +169,7 @@ const HomePage = () => {
               padding: "10px 20px", // Optional: Adjust padding for better appearance
             }}
           >
-            Learn more about Dr. Manglani-Terranova
+            Learn more about Dr. Heena
           </Button>
         </Box>
       </Container>

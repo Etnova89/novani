@@ -30,9 +30,20 @@ const AboutPage = () => {
   };
 
   return (
-    <Container maxWidth="md" sx={{ mt: 4, mb: 4 }}>
+    <Container
+      maxWidth="md"
+      sx={{
+        mt: 4,
+        mb: 4,
+        animation: "fadeIn 1.5s ease-in-out",
+        "@keyframes fadeIn": {
+          from: { opacity: 0 },
+          to: { opacity: 1 },
+        },
+      }}
+    >
       <Typography variant="h1" gutterBottom sx={{ textAlign: "center", mb: 6 }}>
-        About Dr. Heena Manglani-Terranova
+        About Dr. Heena
       </Typography>
 
       <Paper elevation={3} sx={{ p: 4, mb: 4 }}>
@@ -65,24 +76,23 @@ const AboutPage = () => {
               the problem. The issue is what we, as humans tend to do when
               experiencing distress that matters. She uses a behavioral approach
               to help patients live a life that aligns with what matters most to
-              them. Dr. Manglani-Terranova also specializes in working with
-              South Asian Americans and bicultural couples given her
-              understanding of the unique challenges faced by the South Asian
-              community. Dr. Manglani-Terranova uses a culturally sensitive and
-              curious approach to understand the barriers to living a meaningful
-              life. She provides culturally-attuned care that focuses on
-              strength and resilience to support her patients in taking actions
-              that align with their personally-chosen values.
+              them. Dr. Heena also specializes in working with South Asian
+              Americans and bicultural couples given her understanding of the
+              unique challenges faced by the South Asian community. Dr. Heena
+              uses a culturally sensitive and curious approach to understand the
+              barriers to living a meaningful life. She provides
+              culturally-attuned care that focuses on strength and resilience to
+              support her patients in taking actions that align with their
+              personally-chosen values.
             </Typography>
             <Typography variant="body1">
-              In addition to her clinical work, Dr. Manglani-Terranova is a
-              research scientist, studying ways to improve health and well-being
-              in South Asian Americans and individuals adjusting to chronic
-              illness (i.e. multiple sclerosis). Her unique focus on relational
-              factors positions her to study individuals within the larger
-              systems in which they function and to leveral a social justice
-              lens to bridge the gap between mental health, chronic disease, and
-              holistic care.
+              In addition to her clinical work, Dr. Heena is a research
+              scientist, studying ways to improve health and well-being in South
+              Asian Americans and individuals adjusting to chronic illness (i.e.
+              multiple sclerosis). Her unique focus on relational factors
+              positions her to study individuals within the larger systems in
+              which they function and to leveral a social justice lens to bridge
+              the gap between mental health, chronic disease, and holistic care.
             </Typography>
           </Grid>
         </Grid>
@@ -164,8 +174,7 @@ const AboutPage = () => {
 
       <Box sx={{ textAlign: "center", mt: 6 }}>
         <Typography variant="h5" gutterBottom>
-          Ready to start your journey with Dr. Manglani-Terranova to uncover
-          your resilience?
+          Ready to start your journey with Dr. Heena?
         </Typography>
         <Button
           variant="contained"

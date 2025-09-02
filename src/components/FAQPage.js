@@ -18,11 +18,6 @@ const FAQPage = () => {
 
   const faqs = [
     {
-      question: "What is therapy?",
-      answer:
-        "Therapy is a collaborative process where you work with a trained professional to address emotional, psychological, or relational challenges.",
-    },
-    {
       question: "How long are sessions?",
       answer:
         "Sessions typically last 55 minutes. Therapy sessions may be scheduled for 75 or 90-minutes, with fees adjusted accordingly based on the extended duration.",
@@ -31,11 +26,10 @@ const FAQPage = () => {
       question: "Do you accept insurance?",
       answer: (
         <>
-          No, Dr. Manglani-Terranova is an out-of-network provider. However, she
-          offers monthly superbills that you can submit to your insurance
-          company for potential reimbursement directly to you. Below are
-          questions to ask your insurance for out-of-network coverage for
-          behavioral health:
+          No, Dr. Heena is an out-of-network provider. However, she offers
+          monthly superbills that you can submit to your insurance company for
+          potential reimbursement directly to you. Below are questions to ask
+          your insurance for out-of-network coverage for behavioral health:
           <ul>
             <li>Do I have out-of-network benefits for behavioral health?</li>
             <li>If so, what is the percentage covered?</li>
@@ -121,6 +115,11 @@ const FAQPage = () => {
         flexDirection: "column",
         bgcolor: "background.default",
         color: "text.primary",
+        animation: "fadeIn 1.5s ease-in-out",
+        "@keyframes fadeIn": {
+          from: { opacity: 0 },
+          to: { opacity: 1 },
+        },
       }}
     >
       <Container maxWidth="xl" sx={{ mt: 1, mb: 8, flexGrow: 1 }}>

@@ -60,17 +60,24 @@ const ContactPage = () => {
   };
 
   return (
-    <Container maxWidth="md" sx={{ mt: 4, mb: 4 }}>
+    <Container
+      maxWidth="md"
+      sx={{
+        mt: 4,
+        mb: 4,
+        animation: "fadeIn 1.5s ease-in-out",
+        "@keyframes fadeIn": {
+          from: { opacity: 0 },
+          to: { opacity: 1 },
+        },
+      }}
+    >
       <Typography variant="h1" gutterBottom sx={{ textAlign: "center", mb: 6 }}>
         Contact Us
       </Typography>
 
       <Paper elevation={3} sx={{ p: 4 }}>
-        <Typography
-          variant="h5"
-          gutterBottom
-          sx={{ textAlign: "center", mb: 6 }}
-        >
+        <Typography variant="h5" gutterBottom sx={{ textAlign: "center" }}>
           To schedule a consultation please send an email to
           heena@novantherapy.com or call (617)-520-4397
         </Typography>
