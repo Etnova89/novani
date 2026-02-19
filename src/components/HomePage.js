@@ -71,7 +71,7 @@ const HomePage = () => {
         flexDirection: "column",
         bgcolor: "background.default",
         color: "text.primary",
-        animation: "fadeIn 1.5s ease-in-out",
+        animation: "fadeIn 1s ease-in-out",
         "@keyframes fadeIn": {
           from: { opacity: 0 },
           to: { opacity: 1 },

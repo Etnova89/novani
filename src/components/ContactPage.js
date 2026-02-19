@@ -65,7 +65,7 @@ const ContactPage = () => {
       sx={{
         mt: 4,
         mb: 4,
-        animation: "fadeIn 1.5s ease-in-out",
+        animation: "fadeIn 1s ease-in-out",
         "@keyframes fadeIn": {
           from: { opacity: 0 },
           to: { opacity: 1 },
@@ -78,8 +78,8 @@ const ContactPage = () => {
 
       <Paper elevation={3} sx={{ p: 4 }}>
         <Typography variant="h5" gutterBottom sx={{ textAlign: "center" }}>
-          To schedule a consultation please send an email to
-          heena@novantherapy.com or call (617)-520-4397
+          To schedule a consultation, please send an email to
+          heena@novanitherapy.com or call (617)-520-4397
         </Typography>
         {/* <form onSubmit={handleSubmit(onSubmit)}>
           <Controller
